@@ -1,10 +1,14 @@
 class ItemsController < ApplicationController
-before_action :move_to_index, except: :index
+  before_action :move_to_index, except: :index
 
   def index
   end
 
   def new
+  end
+
+  def destroy
+    redirect_to root_path
   end
 
   private
